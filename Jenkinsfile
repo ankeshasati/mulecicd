@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+         PATH = "C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;${env.PATH}"
+        ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
+      }
   stages {
     stage('Build') {
       steps {
@@ -8,10 +12,7 @@ pipeline {
     }
        
     stage('Deploy CloudHub') {
-      environment {
-        ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
-      }
-      steps {
+       steps {
         sh 'mvn deploy -P cloudhub -Danypoint.username=${ANYPOINT_CREDENTIALS_USR} -Danypoint.password=${ANYPOINT_CREDENTIALS_PSW}'
       }
     }
