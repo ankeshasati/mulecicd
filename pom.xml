@@ -32,7 +32,7 @@
 				<username>${username}</username>
 				<password>${password}</password>
 				<environment>${environment}</environment>
-				<applicationName>demo-cicd-app</applicationName>
+				<applicationName>${applicationName}</applicationName>
 				<properties>
 				<key>value</key>
 				</properties>
