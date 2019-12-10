@@ -31,7 +31,7 @@
 				<muleVersion>4.2.2</muleVersion>
 				<username>${username}</username>
 				<password>${password}</password>
-				<applicationName>demo-cicd-app-1</applicationName>
+				<applicationName>demo-cicd-app</applicationName>
 				<environment>Sandbox</environment>
 				<properties>
 				<key>value</key>
