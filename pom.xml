@@ -38,6 +38,15 @@
 				</properties>
 				</cloudHubDeployment>
 				</configuration>
+				<executions>
+  				  <execution>
+					<id>deploy</id>
+					<phase>deploy</phase>
+					<goals>
+					<goal>cloudhub-deploy</goal>
+					</goals>
+    				 </execution>
+			       </executions>
 			</plugin>
 		</plugins>
 	</build>
