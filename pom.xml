@@ -80,9 +80,9 @@
             <layout>default</layout>
         </repository>
 	<repository>
-          <snapshots>
+       <!--   <snapshots>
             <enabled>false</enabled>
-          </snapshots>
+          </snapshots> -->
           <id>central</id>
           <name>libs-release</name>
           <url>http://localhost:8081/artifactory/libs-release</url>
@@ -90,7 +90,7 @@
         <snapshots><enabled>false</enabled></snapshots>
         </repository>
         <repository>
-          <snapshots />
+         <!-- <snapshots /> -->
           <id>snapshots</id>
           <name>libs-snapshot</name>
           <url>http://localhost:8081/artifactory/libs-snapshot</url>
