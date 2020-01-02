@@ -7,7 +7,6 @@
 	<artifactId>demo-cicd-app</artifactId>
     <version>1.0.0</version>
     <packaging>mule-application</packaging>
-
 	<name>demo-cicd-app</name>
 
     <properties>
@@ -31,8 +30,8 @@
 				<muleVersion>4.2.2</muleVersion>
 				<username>${username}</username>
 				<password>${password}</password>
-				<applicationName>demo-cicd-app-1</applicationName>
-				<environment>Sandbox</environment>
+				<applicationName>${environment}</applicationName>
+				<environment>${applicationName}</environment>
 				<properties>
 				<key>value</key>
 				</properties>
