@@ -30,8 +30,8 @@
 				<muleVersion>4.2.2</muleVersion>
 				<username>${username}</username>
 				<password>${password}</password>
-				<applicationName>${environment}</applicationName>
-				<environment>${applicationName}</environment>
+				<applicationName>${applicationName}</applicationName>
+				<environment>${environment}</environment>
 				<properties>
 				<key>value</key>
 				</properties>
