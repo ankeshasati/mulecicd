@@ -2,10 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
+	
+	<parent>
+		<groupId>com.mycompany</groupId>
+		<artifactId>MavenParent</artifactId>
+		<version>1.0.0</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	
 	<groupId>com.mycompany</groupId>
 	<artifactId>demo-cicd-app</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>mule-application</packaging>
 	<name>demo-cicd-app</name>
 
@@ -24,19 +31,6 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-				<cloudHubDeployment>
-				<uri>https://anypoint.mulesoft.com</uri>
-				<muleVersion>4.2.2</muleVersion>
-				<username>${username}</username>
-				<password>${password}</password>
-				<applicationName>${applicationName}</applicationName>
-				<environment>${environment}</environment>
-				<properties>
-				<key>value</key>
-				</properties>
-				</cloudHubDeployment>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
